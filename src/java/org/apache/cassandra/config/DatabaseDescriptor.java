@@ -80,6 +80,9 @@ public class DatabaseDescriptor
      * Tokens are serialized in a Gossip VersionedValue String.  VV are restricted to 64KB
      * when we send them over the wire, which works out to about 1700 tokens.
      */
+    /**
+     * 允许的最大TOKEN数量
+     */
     private static final int MAX_NUM_TOKENS = 1536;
 
     private static IEndpointSnitch snitch;
